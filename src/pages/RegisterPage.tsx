@@ -86,7 +86,7 @@ export default function RegisterPage() {
 
             <div>
               <Label>Nombre de la inmobiliaria</Label>
-              <Input
+              <Input  className="bg-background h-12 mt-1 border-none"
                 value={form.agencyName}
                 onChange={(e) => handleAgencyChange(e.target.value)}
               />
@@ -94,7 +94,7 @@ export default function RegisterPage() {
 
             <div>
               <Label>Slug</Label>
-              <Input
+              <Input  className="bg-background h-12 mt-1 border-none"
                 value={form.slug}
                 onChange={(e) =>
                   setForm({ ...form, slug: e.target.value })
@@ -111,7 +111,7 @@ export default function RegisterPage() {
             <div className="grid grid-cols-2 gap-2">
               <div>
                 <Label>Nombre</Label>
-                <Input
+                <Input  className="bg-background h-12 mt-1 border-none"
                   value={form.ownerFirstName}
                   onChange={(e) =>
                     setForm({ ...form, ownerFirstName: e.target.value })
@@ -121,7 +121,7 @@ export default function RegisterPage() {
 
               <div>
                 <Label>Apellido</Label>
-                <Input
+                <Input  className="bg-background h-12 mt-1 border-none"
                   value={form.ownerLastName}
                   onChange={(e) =>
                     setForm({ ...form, ownerLastName: e.target.value })
@@ -132,7 +132,7 @@ export default function RegisterPage() {
 
             <div>
               <Label>Email</Label>
-              <Input
+              <Input  className="bg-background h-12 mt-1 border-none"
                 type="email"
                 value={form.ownerEmail}
                 onChange={(e) =>
@@ -143,8 +143,8 @@ export default function RegisterPage() {
 
             <div>
               <Label>Contraseña</Label>
-              <Input
-                type="password"
+              <Input  className="bg-background h-12 mt-1 border-none"
+                type="password" 
                 value={form.password}
                 onChange={(e) =>
                   setForm({ ...form, password: e.target.value })
@@ -156,7 +156,7 @@ export default function RegisterPage() {
               <p className="text-red-500 text-sm">{error}</p>
             )}
 
-            <Button className="w-full" disabled={loading} type="submit">
+            <Button className="w-full h-12 bg-primary hover:bg-secondary text-black font-medium" disabled={loading} type="submit">
               {loading ? "Creando..." : "Crear cuenta"}
             </Button>
 

@@ -45,9 +45,8 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center">
-      <Card className="w-full max-w-md bg-card border border-border rounded-2xl shadow-xl">
+      <Card className="w-full max-w-md bg-card border-none rounded-2xl ">
         <CardContent className="p-8">
-
           <div className="flex justify-center mb-6">
             <div className="px-4 py-1 rounded-full bg-tertiary text-primary font-semibold">
               inmob
@@ -55,43 +54,43 @@ export default function LoginPage() {
           </div>
 
           <h1 className="text-2xl font-semibold text-center text-white mb-6">
-            Iniciar sesión
+            Ingrese sesión
           </h1>
 
           <form onSubmit={handleSubmit} className="space-y-4">
 
             <div>
-              <Label className="text-muted">Correo electrónico</Label>
+              <Label className="text-sm">Correo electrónico</Label>
               <Input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="nombre@ejemplo.com"
-                className="bg-background border-border mt-1"
+                className="bg-background h-12 mt-1 border-none"
               />
             </div>
 
             <div>
-              <Label className="text-muted">Base de datos</Label>
+              <Label className="text-sm">Base de datos</Label>
               <Input
                 value={slug}
                 onChange={(e) => setSlug(e.target.value)}
                 placeholder="nombre_de_tu_inmobiliaria"
-                className="bg-background border-border mt-1"
+                className="bg-background h-12 mt-1 border-none"
               />
             </div>
 
             <div>
-              <Label className="text-muted">Contraseña</Label>
+              <Label className="text-sm">Contraseña</Label>
               <Input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="bg-background border-border mt-1"
+                className="bg-background h-12 mt-1 border-none"
               />
             </div>
 
             <Button
-              className="w-full bg-primary hover:bg-secondary text-black font-medium"
+              className="w-full h-12 bg-primary hover:bg-secondary text-black font-medium"
               type="submit"
               disabled={loading}
             >
