@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { getRandomImage } from "@/mocks/demoImages"
 import { BedDouble,Bath,Ruler,MapPin } from "lucide-react"
-import { Navigate,Link } from "@tanstack/react-router"
+import { Link } from "@tanstack/react-router"
 
 type Props = {
   property: any

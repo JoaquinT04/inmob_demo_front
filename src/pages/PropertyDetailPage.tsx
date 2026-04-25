@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "@tanstack/react-router"
 import { getPropertyById } from "@/services/properties"
-import { getRandomImage, getRandomImages } from "@/mocks/demoImages"
+import {  getRandomImages } from "@/mocks/demoImages"
 
 export default function PropertyDetailPage() {
   const { propertyId } = useParams({ from: "/_app/properties/$propertyId" })

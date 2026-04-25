@@ -11,9 +11,6 @@ import { getMe } from "@/services/auth"
 
 export default function SettingsPage() {
 const [tab, setTab] = useState<"company" | "users" | "general">("company")
-const [user, setUser] = useState<any>(null)
-const [tenant, setTenant] = useState<any>(null)
-const [loading, setLoading] = useState(true)
 
 useEffect(() => {
   const fetchData = async () => {

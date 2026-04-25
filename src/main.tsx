@@ -9,6 +9,9 @@ const router = createRouter({ routeTree })// Register the router instance for ty
 declare module '@tanstack/react-router' {  interface Register {    router: typeof router  }}
 // Render the app
 const rootElement = document.getElementById('root')
+if (!rootElement) {
+  throw new Error('Root element not found')
+}
 if (!rootElement.innerHTML) {  
   const root = ReactDOM.createRoot(rootElement)  
   root.render(

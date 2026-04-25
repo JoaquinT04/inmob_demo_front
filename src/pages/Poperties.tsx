@@ -3,7 +3,7 @@ import PropertyGrid from "@/components/properties/propertyGrid"
 import PropertyTable from "@/components/properties/propertyTable"
 import { getProperties } from "@/services/properties"
 import { useNavigate } from "@tanstack/react-router"
-import { Bold, Grid2X2,List } from "lucide-react"
+import { Grid2X2,List } from "lucide-react"
 
 export default function PropertiesPage() {
   const [properties, setProperties] = useState<any[]>([])

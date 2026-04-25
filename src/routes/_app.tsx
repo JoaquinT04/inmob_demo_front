@@ -1,4 +1,4 @@
-import { createFileRoute, redirect, Outlet } from "@tanstack/react-router"
+import { createFileRoute, redirect } from "@tanstack/react-router"
 import AppLayout from "@/components/layout/AppLayout"
 
 export const Route = createFileRoute("/_app")({
